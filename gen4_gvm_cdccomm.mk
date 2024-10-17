@@ -18,4 +18,8 @@ CUSTOM_PATCHES_MODE := apply
 KERNEL_MODULES_INSTALL := dlkm
 KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_DEVICE)/$(KERNEL_MODULES_INSTALL)/lib/modules
 
+#Customization Variables
+TARGET_ENABLE_AIS_CUST    := true
+TARGET_ENABLE_AIS_CUST_RN := true
+
 
