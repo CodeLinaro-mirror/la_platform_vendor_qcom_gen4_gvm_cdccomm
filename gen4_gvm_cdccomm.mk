@@ -1,3 +1,7 @@
+# CDC specific fstab deployed to vendor ramdisk and vendor
+PRODUCT_COPY_FILES += device/qcom/gen4_gvm_cdccomm/fstab_AB_dynamic_partition_variant.gen4_cdccomm.qti:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.gen4.qcom
+PRODUCT_COPY_FILES += device/qcom/gen4_gvm_cdccomm/fstab_AB_dynamic_partition_variant.gen4_cdccomm.qti:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.gen4.qcom
+
 # Include from the base product
 include device/qcom/gen4_gvm/gen4_gvm.mk
 TARGET_BOARD_DERIVATIVE_SUFFIX := _cdccomm
