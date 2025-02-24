@@ -52,9 +52,9 @@ product                                                /product                e
 
 #CDC specific ufs partitions mount rules
 /dev/block/persist-alliance                            /mnt/product/persist-alliance   ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/confptstatic                                /mnt/vendor/confptstatic        ext4   rw,noatime,nosuid,nodev                                wait,check 
+/dev/block/confptstatic                                /mnt/vendor/confptstatic        ext4    rw,noatime,nosuid,nodev                               wait,check
 /dev/block/confptlive                                  /mnt/vendor/confptlive          ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/confcal                                     /mnt/vendor/confcal             ext4    rw,noatime,nosuid,nodev                               wait,check
+/dev/block/confcal_1                                   /mnt/vendor/confcal_1           vfat    ro,noatime,nosuid,nodev                               wait,check
 /dev/block/diagnostic                                  /mnt/vendor/diagnostic          ext4    rw,noatime,nosuid,nodev                               wait,check
 /dev/block/vvmtruststore                               /mnt/vvmtruststore              ext4    rw,noatime,nosuid,nodev                               wait,check
 /dev/block/update                                      /mnt/update                     ext4    rw,noatime,nosuid,nodev                               wait,check
@@ -64,7 +64,7 @@ product                                                /product                e
 /dev/block/oem_map                                     /mnt/oem_map                    ext4    rw,noatime,nosuid,nodev                               wait,check
 /dev/block/oem0                                        /mnt/oem0                       ext4    rw,noatime,nosuid,nodev                               wait,check
 /dev/block/oem1                                        /mnt/oem1                       ext4    rw,noatime,nosuid,nodev                               wait,check
-
+/dev/block/confcal_0                                   /mnt/vendor/confcal_0           vfat    ro,noatime,nosuid,nodev                               wait,check
 
 # Need to have this entry in here even though the mount point itself is no longer needed.
 # The update_engine code looks for this entry in order to determine the boot device address
