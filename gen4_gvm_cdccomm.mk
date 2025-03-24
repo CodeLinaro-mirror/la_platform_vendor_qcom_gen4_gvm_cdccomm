@@ -11,6 +11,9 @@ TARGET_BASE_PRODUCT := gen4_gvm
 # Flag to identify CDC HW
 TARGET_USES_CDC_HW := true
 
+# Flag to enable DATA features on CDC HW
+ENABLE_DATA_AUTOMS := true
+
 PRODUCT_NAME := gen4_gvm_cdccomm
 PRODUCT_DEVICE := gen4_gvm_cdccomm
 PRODUCT_BRAND := qti
