@@ -19,7 +19,7 @@ PRODUCT_DEVICE := gen4_gvm_cdccomm
 PRODUCT_BRAND := qti
 PRODUCT_MODEL := gen4_gvm_cdccomm for arm64
 
-CUSTOM_PATCHES_MODE := apply
+#CUSTOM_PATCHES_MODE := apply
 
 # Change Kernel modules install path
 KERNEL_MODULES_INSTALL := dlkm
