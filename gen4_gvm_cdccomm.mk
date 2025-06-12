@@ -28,6 +28,7 @@ KERNEL_MODULES_OUT := out/target/product/$(PRODUCT_DEVICE)/$(KERNEL_MODULES_INST
 #Customization Variables
 TARGET_ENABLE_AIS_CUST    := true
 TARGET_ENABLE_AIS_CUST_RN := true
+TARGET_ENABLE_C11_COMPATIBLE := true
 
 PRODUCT_PACKAGES += FrameworksResAutoTarget_Vendor_cdc
 PRODUCT_PACKAGES += CarServiceResAutoTarget_Vendor_cdc
