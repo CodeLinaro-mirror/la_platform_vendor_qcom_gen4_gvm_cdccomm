@@ -51,23 +51,23 @@ product                                                /product                e
 /dev/block/bluetooth                                   /vendor/bt_firmware     vfat    ro,shortname=lower,uid=0,gid=1000,dmask=227,fmask=337,context=u:object_r:bt_firmware_file:s0            defaults,slotselect
 
 #CDC specific ufs partitions mount rules
-/dev/block/persist-alliance                            /mnt/product/persist-alliance   ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/confptstatic                                /mnt/vendor/confptstatic        ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/earlydata                                   /mnt/vendor/earlydata           ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/confcal_1                                   /mnt/vendor/confcal_1           vfat    ro,noatime,nosuid,nodev                               wait,check
-/dev/block/diagnostic                                  /mnt/vendor/diagnostic          ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/vvmtruststore                               /mnt/vvmtruststore              ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/update                                      /mnt/update                     ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/ehorizon                                    /mnt/vendor/ehorizon            ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/factory                                     /mnt/vendor/factory             ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/persistent-logging                          /mnt/vendor/persistent-logging  ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/oem_map                                     /mnt/oem_map                    ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/oem0                                        /mnt/oem0                       ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/oem1                                        /mnt/oem1                       ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/confcal_0                                   /mnt/vendor/confcal_0           vfat    ro,noatime,nosuid,nodev                               wait,check
-/dev/block/by-name/oem_ext                             /mnt/vendor/oem_ext             ext4    rw,noatime,nosuid,nodev                               wait,check,slotselect
-/dev/block/rbvm_oem0                                   /mnt/vendor/rbvm_oem0           ext4    rw,noatime,nosuid,nodev                               wait,check
-/dev/block/rbvm_oem1                                   /mnt/vendor/rbvm_oem1           ext4    rw,noatime,nosuid,nodev                               wait,check
+/dev/block/persist-alliance                            /mnt/product/persist-alliance   ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/confptstatic                                /mnt/vendor/confptstatic        ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/earlydata                                   /mnt/vendor/earlydata           ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/confcal_1                                   /mnt/vendor/confcal_1           vfat    ro,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/diagnostic                                  /mnt/vendor/diagnostic          ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/vvmtruststore                               /mnt/vvmtruststore              ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/update                                      /mnt/update                     ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/ehorizon                                    /mnt/vendor/ehorizon            ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/factory                                     /mnt/vendor/factory             ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/persistent-logging                          /mnt/vendor/persistent-logging  ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/oem_map                                     /mnt/oem_map                    ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/oem0                                        /mnt/oem0                       ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/oem1                                        /mnt/oem1                       ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/confcal_0                                   /mnt/vendor/confcal_0           vfat    ro,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/by-name/oem_ext                             /mnt/vendor/oem_ext             ext4    rw,noatime,nosuid,nodev                               latemount,wait,check,slotselect
+/dev/block/rbvm_oem0                                   /mnt/vendor/rbvm_oem0           ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
+/dev/block/rbvm_oem1                                   /mnt/vendor/rbvm_oem1           ext4    rw,noatime,nosuid,nodev                               latemount,wait,check
 
 # Need to have this entry in here even though the mount point itself is no longer needed.
 # The update_engine code looks for this entry in order to determine the boot device address
