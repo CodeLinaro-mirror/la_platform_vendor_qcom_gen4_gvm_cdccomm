@@ -12,7 +12,7 @@ TARGET_BASE_PRODUCT := gen4_gvm
 TARGET_USES_CDC_HW := true
 
 # Flag to enable DATA features on CDC HW
-ENABLE_DATA_AUTOMS := true
+ENABLE_DATA_AUTOMS := false
 
 PRODUCT_NAME := gen4_gvm_cdccomm
 PRODUCT_DEVICE := gen4_gvm_cdccomm
