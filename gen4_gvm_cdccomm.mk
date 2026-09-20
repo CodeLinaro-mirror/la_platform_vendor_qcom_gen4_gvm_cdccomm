@@ -3,7 +3,8 @@ PRODUCT_COPY_FILES += device/qcom/gen4_gvm_cdccomm/fstab_AB_dynamic_partition_va
 PRODUCT_COPY_FILES += device/qcom/gen4_gvm_cdccomm/fstab_AB_dynamic_partition_variant.gen4_cdccomm.qti:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.gen4.qcom
 
 # Include from the base product
-include device/qcom/gen4_gvm/gen4_gvm.mk
+include device/qcom/gen4_gvm_sdvivi/gen4_gvm_sdvivi.mk
+
 TARGET_BOARD_DERIVATIVE_SUFFIX := _cdccomm
 
 TARGET_BASE_PRODUCT := gen4_gvm
